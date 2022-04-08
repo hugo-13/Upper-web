@@ -1,0 +1,45 @@
+AddDefaultCharset "utf-8"
+
+# On interdit l'acces au fichier .htacces 
+<Files .htaccess>
+    order allow,deny
+    deny from allow
+</Files>
+
+
+# Interdire d'indexé les fichiers 
+Options All -Indexes
+
+# Tous les fichier contenant ...
+<FilesMatch "\.(html|php|js|css|txt)$">
+    AddDefaultCharset UTF-8
+    DefaultLanguage fr-fr
+</FilesMatch>
+
+
+
+
+
+
+# -------------------------------------
+# Reecriture
+# -------------------------------------
+
+Options +FollowSymlinks -MultiViews
+
+# On active le module de réecriture
+RewriteEngine On
+
+# -------------------------------------
+# On ecrit des regle de reecriture
+# -------------------------------------
+
+# Si apres [FileName] il y a / salut je redirige vers filename
+RewriteRule ^$ /view/index.php
+RewriteRule ^contact$ /view/contact.php
+RewriteRule ^login$ /view/login.php
+RewriteRule ^register$ /view/register.php
+RewriteRule ^compte$ /view/compte.php
+RewriteRule ^forgot/password$ /view/forgot_psw.php
+RewriteRule ^update/compte$ /view/update_compte.php
+RewriteRule ^devis$ /view/devis.php

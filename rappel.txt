@@ -1,0 +1,7 @@
+A faire******************************/
+
+
+url rewrithing pas oublier l'url dnas register pour confim mail et resett password
+
+securisation dossier
+

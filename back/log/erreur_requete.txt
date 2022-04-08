@@ -1,0 +1,7 @@
+--ERREUR REQUETE LE 18/03/22 19:54:02--
+[FICHIER] : C:\wamp64\www\Site\upper_web\model\back_message_delete.php
+[LIGNE] : 69
+[CODE] : 42000
+[MESSAGE] : SQLSTATE[42000]: Syntax error or access violation: 1065 Query est vide
+[IP USER] : 127.0.0.1
+
